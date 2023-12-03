@@ -15,7 +15,7 @@ function Viewuser() {
     }, [])
     let getuser = async () => {
         try {
-            const datas = await axios.get(`http://localhost:8000/user/users/${params.id}`);
+            const datas = await axios.get(`https://assignment-backend-h2gm.onrender.com/user/users/${params.id}`);
             setuser(datas.data)
             console.log(datas.data)
             setloading(false)

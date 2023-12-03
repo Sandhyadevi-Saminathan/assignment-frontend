@@ -12,7 +12,7 @@ const CreateTeam = () => {
 
   const fetchUsersByCriteria = async () => {
     try {
-      const response = await axios.get(`http://localhost:8000/user/filter`, {
+      const response = await axios.get(`https://assignment-backend-h2gm.onrender.com/user/filter`, {
         params: {
           domain,
           availability,
@@ -75,7 +75,7 @@ const CreateTeam = () => {
           users: selectedUsers,
         };
         console.log(teamData)
-       const response= await axios.post('http://localhost:8000/team/create', teamData);
+       const response= await axios.post('https://assignment-backend-h2gm.onrender.com/team/create', teamData);
         const createdTeamId = response.data._id
   
         // Clear selected users and team name after successful creation

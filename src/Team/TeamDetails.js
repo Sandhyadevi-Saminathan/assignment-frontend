@@ -11,7 +11,7 @@ const TeamDetails = () => {
     // Fetch team details from the backend
     const fetchTeamDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/team/teamdetails/${params.id}`); 
+        const response = await axios.get(`https://assignment-backend-h2gm.onrender.com/team/teamdetails/${params.id}`); 
         setTeamDetails(response.data);
         setUsersData(response.data.users); 
       } catch (error) {

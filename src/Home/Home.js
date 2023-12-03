@@ -28,7 +28,7 @@ function Home() {
 
     try {
         
-        let userData = await axios.get(`http://localhost:8000/user/users?page=${page}`)
+        let userData = await axios.get(`https://assignment-backend-h2gm.onrender.com/user/users?page=${page}`)
       
         const { users, totalPages} = userData.data;
         setUsers(users)
@@ -44,7 +44,7 @@ function Home() {
 
   const handleFilters = async (selectedFilters) => {
     try {
-      const response = await axios.get('http://localhost:8000/user/filter', {
+      const response = await axios.get('https://assignment-backend-h2gm.onrender.com/user/filter', {
         params: selectedFilters,
       });
       setFilteredoptions(response.data);
@@ -56,7 +56,7 @@ function Home() {
     const handleSearch = async (query) => {
       setSearchQuery(query);
       try {
-        const response = await axios.get(`http://localhost:8000/user/search?query=${query}`);
+        const response = await axios.get(`https://assignment-backend-h2gm.onrender.com/user/search?query=${query}`);
         setFilteredUsers(response.data);
        
         console.log(response.data.length)
@@ -76,7 +76,7 @@ function Home() {
         const confirm = window.confirm("Are u sure?")
         if (confirm) {
 
-            await axios.delete(`http://localhost:8000/user/users/${userdata}`)
+            await axios.delete(`https://assignment-backend-h2gm.onrender.com/user/users/${userdata}`)
             alert('User deleted')
            fetchUsers()
         }

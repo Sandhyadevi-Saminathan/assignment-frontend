@@ -52,7 +52,7 @@ function Createuser() {
             try {
 
                 setloading(true)
-                let userData = await axios.post("http://localhost:8000/user/users", values);
+                let userData = await axios.post("https://assignment-backend-h2gm.onrender.com/user/users", values);
                 alert("User Created");
                 formik.resetForm();
                 navigate("/");

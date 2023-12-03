@@ -10,7 +10,7 @@ const TeamList = () => {
     // Fetch list of teams from the backend
     const fetchTeams = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/team/teams'); 
+        const response = await axios.get('https://assignment-backend-h2gm.onrender.com/team/teams'); 
         setTeams(response.data);
       } catch (error) {
         console.error('Error fetching teams:', error);

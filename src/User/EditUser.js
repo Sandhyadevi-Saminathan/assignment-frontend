@@ -18,7 +18,7 @@ function Edituser() {
     }, [])
     let getuser = async () => {
         try {
-            const user = await axios.get(`http://localhost:8000/user/users/${params.id}`)
+            const user = await axios.get(`https://assignment-backend-h2gm.onrender.com/user/users/${params.id}`)
             console.log(user.data.gender)
             
             formik.setValues(user.data)
@@ -71,7 +71,7 @@ function Edituser() {
             try {
 
                 setupdating(true)
-                const user = await axios.put(`http://localhost:8000/user/users/${params.id}`, values)
+                const user = await axios.put(`https://assignment-backend-h2gm.onrender.com/user/users/${params.id}`, values)
                 alert("update done")
                 console.log(user)
                 navigate(`/`)
