@@ -1,0 +1,33 @@
+.filter {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter-icon {
+    cursor: pointer;
+  }
+  
+  .filter-options {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 100;
+    width: 200px;
+  }
+  
+  .filter-options h5 {
+    margin-top: 0;
+  }
+  
+  .filter-options label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .filter-options input[type='checkbox'] {
+    margin-right: 5px;
+  }
+  

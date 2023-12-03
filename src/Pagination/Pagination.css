@@ -1,0 +1,11 @@
+.pagination .page-item.active .page-link {
+    background-color:teal; 
+    border-color: #007bff;
+     
+  } 
+  .pagination .page-link {
+    color:tomato; 
+  }  
+  .pagination .page-item:not(.disabled) .page-link:hover {
+    color:black; /* Change to the desired color for hover effect */
+  }

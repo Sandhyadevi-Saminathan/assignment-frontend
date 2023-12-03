@@ -1,0 +1,71 @@
+/* Home.css */
+
+.card {
+    height: 400px; /* Set a fixed height for the card */
+   /* Add your desired background color */
+  border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+  }
+  
+  .card-img-top {
+   
+    height: 150px; /* Set a fixed height for the image */
+    width: 250px; /* Ensure the image takes the full width of the card */
+    display: block;
+    margin: 0 auto; /* Center the image within the card */
+  }
+  /* .card-title {
+    font-size: 1.5rem; 
+    font-family: cursive;
+    color:turquoise; 
+  }
+  
+  .card-text {
+    font-size: 1rem; 
+    color: #FF6347; 
+  }
+  
+  .card-text-price {
+    font-size: 1.25rem; 
+    font-family: cursivex;
+    color:steelblue
+  } */
+  
+.search-filter-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-filter-container .filter-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 24px; /* Adjust icon size */
+  color: #3366ff; /* Adjust icon color */
+}
+.card-title {
+    color: blue; /* Style for keys */
+    margin-bottom: 5px;
+  }
+  
+  .card-text,
+  .card-text-price {
+    color: green; /* Style for values */
+    margin-bottom: 5px;
+  }
+  .key {
+   /* Adjust the width as needed */
+  font-weight: bold;
+    color: blue; /* Style for keys */
+    margin-bottom: 5px;
+    font-family: cursive;
+    
+  }
+  
+  .value {
+    flex-grow: 1;
+  text-align: left;
+    color: green; /* Style for values */
+    margin-bottom: 5px;
+ }
+  
